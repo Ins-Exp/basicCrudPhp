@@ -57,10 +57,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `furniture` (`id`, `name`, `quantity`, `type`, `url`, `description`) VALUES
-(100, 'ABCD1', '27', 'bed', 'www.leul.com', 'comfortable'),
-(101, 'ABCD2', '21', 'table', 'www.bruk.com', 'comfortable'),
-(102, 'ABCD3', '18', 'chair', 'www.beti.com', 'comfortable');
-(103, 'ABCD4', '7', 'chair', 'www.beti.com', 'comfortable');
+(1, 'chai', '4', 'For living room', 'https://grandrapidschair.com', 'light weight four legs'),
+(101, 'table', '10', 'For office', 'https://www.ubuy.et/productimg', 'Four legs, Rectangular,'),
 
 
 --
