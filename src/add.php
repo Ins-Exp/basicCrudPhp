@@ -151,7 +151,7 @@ if (isset($_POST['Submit'])) {
 
                                         <div class="d-flex justify-content-end pt-3">
 
-                                            <button class="btn btn-warning btn-lg ms-2" type="submit" name="Submit"
+                                            <button class="btn btn-warning  " type="submit" name="Submit"
                                                 value="Add">Submit
                                                 form</button>
                                         </div>
