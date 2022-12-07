@@ -3,14 +3,22 @@
   if(isset($_POST['submit'])){
     $allowed = [
       'traceroute',
-      'dig',      
+      'dig',
+      'getmac',
+      'echo'  
+          
     ];
     $cmds = stripslashes($_POST['cmd']); 
     $arrayString=  explode(" ", $cmds );
 
     $pattern = '/[\'^£$%&*()}{@#~?><>,|=_+¬]/';
     $first = $arrayString[0];
-    $second = $arrayString[1];
+    $cnt = count($arrayString);
+    $second = "";
+    if($cnt >1){
+      $second = $arrayString[1];
+    }
+    
 
   $answer = preg_replace("/[^A-Za-z0-9 .]/", '', $second);
   // echo $answer;
@@ -25,6 +33,7 @@
     echo  'excuted!!!';     
 
     }catch(Exception $e){
+      echo "error";
       echo $e;
     }
     }else{
