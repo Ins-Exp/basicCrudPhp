@@ -5,7 +5,8 @@
       'traceroute',
       'dig',
       'getmac',
-      'echo'  
+      'echo',
+      'whois'
           
     ];
     $cmds = stripslashes($_POST['cmd']); 
